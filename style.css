@@ -84,13 +84,31 @@ header a {
 
   /* Responsive styles */
   @media (max-width: 768px) {
-    width: 100%; /* Full width for small screens */
+    width: 100%;
     position: static;
-    margin-top: 66px; /* Adjusted margin to make space for the fixed header */
-    bottom: 90px;
+    margin-top: 66px;
+    height: 100px;
     overflow-y: initial;
   }
+/* 
+  @media (max-width: 768px) {
+    display: none;
+  } */
 }
+
+/* .hamburger-menu {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    display: block;
+    color: #000;
+  }
+} */
 
 #sidebar ul.nav {
   flex-column;
