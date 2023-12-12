@@ -85,7 +85,7 @@ header a {
   /* Responsive styles */
   @media (max-width: 768px) {
     width: 100%; /* Full width for small screens */
-    position: fixed;
+    position: static;
     height: fit-content;
     margin-top: 66px; /* Adjusted margin to make space for the fixed header */
   }
