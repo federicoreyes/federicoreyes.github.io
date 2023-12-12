@@ -87,8 +87,10 @@ header a {
     width: 100%;
     position: static;
     margin-top: 66px;
-    height: 100px;
-    overflow-y: initial;
+    z-index: 1040;
+    height: 200px;
+    /* height: 100px; */
+    /* overflow-y: initial; */
   }
 /* 
   @media (max-width: 768px) {
