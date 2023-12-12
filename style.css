@@ -87,7 +87,7 @@ header a {
     width: 100%; /* Full width for small screens */
     position: static;
     margin-top: 66px; /* Adjusted margin to make space for the fixed header */
-    bottom: 50px;
+    bottom: 90px;
     overflow-y: initial;
   }
 }
