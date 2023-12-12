@@ -12,7 +12,6 @@
 
 /* Main Content Styles */
 main {
-  padding: 20px;
   padding-top: 80px; /* Added padding to the top to make space for the fixed header */
   padding-bottom: 80px;
   padding-right: 20px;
@@ -21,7 +20,8 @@ main {
   /* Responsive styles */
   @media (max-width: 768px) {
     padding-top: 20px; /* Adjusted padding for small screens */
-    padding-left: 0px
+    padding-left: 0px;
+    top: 500px;
   }
 }
 
@@ -84,33 +84,13 @@ header a {
 
   /* Responsive styles */
   @media (max-width: 768px) {
-    width: 100%;
+    width: 100%; /* Full width for small screens */
     position: static;
-    margin-top: 66px;
-    z-index: 1040;
-    height: 200px;
-    /* height: 100px; */
-    /* overflow-y: initial; */
+    margin-top: 66px; /* Adjusted margin to make space for the fixed header */
+    height: fit-content;
+    overflow-y: hidden;
   }
-/* 
-  @media (max-width: 768px) {
-    display: none;
-  } */
 }
-
-/* .hamburger-menu {
-  background-color: transparent;
-  border: none;
-  color: #f5f5f5;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px;
-
-  @media (max-width: 768px) {
-    display: block;
-    color: #000;
-  }
-} */
 
 #sidebar ul.nav {
   flex-column;
