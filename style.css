@@ -88,8 +88,8 @@ header a {
     width: 100%; /* Full width for small screens */
     position: static;
     margin-top: 66px; /* Adjusted margin to make space for the fixed header */
-    /* height: fit-content; */
-    overflow-y: hidden;
+    height: fit-content;
+    /* overflow-y: hidden; */
     height: 200px;
   }
 }
