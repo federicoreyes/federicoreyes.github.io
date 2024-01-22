@@ -1,49 +1,24 @@
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
   /* font-family: 'Newsreader', serif; */
-  font-weight:500;
+  font-weight: 500;
   background-color: #f5f5f5;
+  color: #000;
 }
 
-/* Main Content Styles */
-main {
-  padding-top: 80px; /* Added padding to the top to make space for the fixed header */
-  padding-bottom: 80px;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    padding-top: 40px; /* Adjusted padding for small screens */
-    padding-left: 0px;
-    z-index: 1040;
-    /* margin-top: 200px; */
-    top: 250px;
-  }
+/* Example styles for the header */
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1, h2{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-section {
-  scroll-margin-top: 80px;
-  padding-top: 5px;
-}
-
-/* Footer Styles */
 footer {
-  background-color: #f5f5f5;
   padding: 10px;
   position: fixed;
   bottom: 0;
@@ -52,91 +27,38 @@ footer {
   text-align: center;
 }
 
-/* Header Styles */
-header {
-  background-color: #f5f5f5;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030; /* Adjust the z-index to ensure it's above the sidebar */
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-header a {
-  font-size: 18px;
-  background-color: #f5f5f5;
-  color:#000;
+.logo {
+  font-size: 22px;
   text-decoration: none;
 }
 
-/* Sidebar Styles */
-#sidebar {
-  background-color: #f5f5f5;
-  color:#000;
-  position: fixed;
-  top: 66px; /* Adjusted top position to make space for the fixed header */
-  bottom: 0;
-  left: 0;
-  z-index: 1020; /* Adjusted z-index to be below the header */
-  padding-top: 16px;
-  padding-bottom: 16px;
-  overflow-y: auto; /* Allow the sidebar to be scrollable */
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    width: 100%; /* Full width for small screens */
-    position: static;
-    margin-top: 66px; /* Adjusted margin to make space for the fixed header */
-    height: 180px;
-    /* overflow-y: hidden; */
-  }
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
 }
 
-#sidebar ul.nav {
-  flex-column;
-}
-
-#sidebar .nav-link {
-  padding-left: 5px;
-}
-
-#bio {
-  font-size: 13px;
-}
-
-.contact-info {
-  justify-content: flex-start; /* Justify items left */
-  /* justify-content: space-around; */
-  font-size: 13px;
-}
-
-@media (max-width: 768px) {
-  .contact-info {
-    flex-direction: column;
-    align-items: left;
-  }
-
-  .contact-item {
-    margin-bottom: 10px;
-  }
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item a {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-#image-grid figcaption,
-#video-grid figcaption {
+/* Links Styling */
+a {
+  text-decoration: none;
   color: #000;
-  font-size: 13px;
+}
+
+a:hover,
+.nav-link:active {
+  color: #b2a2cb;
+}
+
+/* Social media links */
+.social-media-container a {
+  margin-right: 10px;
+  font-size: 16px;
 }
 
 .social-media-container {
@@ -156,31 +78,37 @@ header a {
   font-size: 16px; /* Adjust size as needed */
 }
 
-/* Links Styling */
-a,
-a:visited,
-header a,
-#sidebar a,
-#sidebar a:visited 
-.nav-link .visited,
-.contact-info a, 
-.contact-info a:visited {
-  text-decoration: none;
+.social-media-container a:hover {
+  color: #b2a2cb;
+}
+
+/* Media query for collapsed navbar button color and style */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    background-color: transparent !important;
+    outline: none !important;
+  }
+
+  .navbar-toggler-icon {
+    color: #000 !important;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center vertically within the flex container */
+    outline: none !important;
+  }
+}
+
+#image-grid figcaption,
+#video-grid figcaption {
   color: #000;
-  background-color: #f5f5f5;
+  font-size: 13px;
 }
 
-a:hover,
-a:active,
-header a:hover,
-header a:active,
-#sidebar a:hover,
-#sidebar a.active,
-.nav-link .active,
-.contact-info a:hover,
-.contact-info a:active {
-  text-decoration: none;
-  color: #B2A2CB;
-  background-color: #f5f5f5;
+#bio {
+  font-size: 13px;
 }
 
+.contact-item a {
+  font-size: 13px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
