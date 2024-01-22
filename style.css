@@ -21,8 +21,9 @@ main {
   @media (max-width: 768px) {
     padding-top: 40px; /* Adjusted padding for small screens */
     padding-left: 0px;
-    top: 400px;
     z-index: 1040;
+    /* margin-top: 200px; */
+    top: 250px;
   }
 }
 
@@ -88,9 +89,8 @@ header a {
     width: 100%; /* Full width for small screens */
     position: static;
     margin-top: 66px; /* Adjusted margin to make space for the fixed header */
-    height: fit-content;
+    height: 180px;
     /* overflow-y: hidden; */
-    height: 200px;
   }
 }
 
