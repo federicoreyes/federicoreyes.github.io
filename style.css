@@ -97,6 +97,9 @@ a:hover,
     display: flex; /* Make it a flex container */
     align-items: center; /* Center vertically within the flex container */
     outline: none !important;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    font-size: 18px;
   }
 }
 
