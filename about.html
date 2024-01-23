@@ -21,8 +21,22 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" async></script>
-    <link rel="preload" href="img/fede-piano-barcelona.png" as="image" />
-    <link rel="preload" href="img/fede-kew-gardens-cortada.png" as="image" />
+    <script>
+      // JavaScript function to pre-load images
+      function preloadImages() {
+        var imageUrls = [
+          'img/fede-piano-barcelona.png',
+          'img/fede-kew-gardens-cortada.png',
+        ];
+
+        for (var i = 0; i < imageUrls.length; i++) {
+          var img = new Image();
+          img.src = imageUrls[i];
+        }
+      }
+      // Call the preloadImages function when the window has finished loading
+      window.onload = preloadImages;
+    </script>
   </head>
   <body>
     <!-- Top Header -->

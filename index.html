@@ -21,22 +21,36 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" async></script>
-    <link rel="preload" href="img/trucombo-cassette-abierto.png" as="image" />
-    <link rel="preload" href="img/fotografia-cassettes-piano.png" as="image" />
-    <link rel="preload" href="img/arp-improv-no1.png" as="image" />
-    <link rel="preload" href="img/fede-piano-barcelona.png" as="image" />
-    <link rel="preload" href="img/fede-kew-gardens-cortada.png" as="image" />
-    <link rel="preload" href="img/7-10-22.png" as="image" />
-    <link rel="preload" href="img/tru-combo.png" as="image" />
-    <link rel="preload" href="img/fotografia-vol1.png" as="image" />
-    <link rel="preload" href="img/fotografia-vol2.png" as="image" />
-    <link rel="preload" href="img/hidden-toys.png" as="image" />
+    <script>
+      // JavaScript function to pre-load images
+      function preloadImages() {
+          var imageUrls = [
+              'img/trucombo-cassette-abierto.png',
+              'img/fotografia-cassettes-piano.png',
+              'img/arp-improv-no1.png',
+              'img/fede-piano-barcelona.png',
+              'img/fede-kew-gardens-cortada.png',
+              'img/7-10-22.png',
+              'img/tru-combo.png',
+              'img/fotografia-vol2.png',
+              'img/fotografia-vol1.png',
+              'img/hidden-toys.png'
+          ];
+
+          for (var i = 0; i < imageUrls.length; i++) {
+              var img = new Image();
+              img.src = imageUrls[i];
+          }
+      }
+      // Call the preloadImages function when the window has finished loading
+      window.onload = preloadImages;
+  </script>
   </head>
   <body>
     <!-- Top Header -->
     <header>
       <div class="logo">
-        <a href="index.html">frey_s</a>
+        <a href="index.html">federico reyes</a>
       </div>
       <div class="social-media-container d-flex">
         <a href="mailto:federicoreyes94@gmail.com"
