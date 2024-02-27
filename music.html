@@ -21,25 +21,11 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" async></script>
-    <script>
-      // JavaScript function to pre-load images
-      function preloadImages() {
-        var imageUrls = [
-          'img/7-10-22.png',
-          'img/tru-combo.png',
-          'img/fotografia-vol2.png',
-          'img/fotografia-vol1.png',
-          'img/hidden-toys.png',
-        ];
-
-        for (var i = 0; i < imageUrls.length; i++) {
-          var img = new Image();
-          img.src = imageUrls[i];
-        }
-      }
-      // Call the preloadImages function when the window has finished loading
-      window.onload = preloadImages;
-    </script>
+    <link rel="preload" as="image" href="img/7-10-22.png" />
+    <link rel="preload" as="image" href="img/tru-combo.png" />
+    <link rel="preload" as="image" href="img/fotografia-vol2.png" />
+    <link rel="preload" as="image" href="img/fotografia-vol1.png" />
+    <link rel="preload" as="image" href="img/hidden-toys.png" />
   </head>
   <body>
     <!-- Top Header -->
