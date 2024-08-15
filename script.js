@@ -1,42 +1,23 @@
 'use strict';
 
 const imagesToLoad = [
-  'img/trucombo-cassette-abierto.jpeg',
-  'img/fotografia-cassettes-piano.jpeg',
-  'img/arp-improv-no1.jpeg',
-  'img/fede-piano-barcelona.jpeg',
-  'img/fede-kew-gardens-cortada.jpeg',
-  'img/7-10-22.jpeg',
-  'img/tru-combo.jpeg',
-  'img/fotografia-vol2.jpeg',
-  'img/fotografia-vol1.jpeg',
-  'img/hidden-toys.jpeg',
-  'img/design-cuando-eramos-felices-fondo.jpeg',
-  'img/design-fr.jpeg',
-  'img/design-modern-better.jpeg',
-  'img/design-musica-clasica-fondo.jpeg',
-  'img/design-nanen.jpeg',
-  'img/design-pasado-oscuro.jpeg',
+  'img/trucombo-cassette-abierto.png',
+  'img/fotografia-cassettes-piano.png',
+  'img/arp-improv-no1.png',
+  'img/fede-piano-barcelona.png',
+  'img/fede-kew-gardens-cortada.png',
+  'img/7-10-22.png',
+  'img/tru-combo.png',
+  'img/fotografia-vol2.png',
+  'img/fotografia-vol1.png',
+  'img/hidden-toys.png',
+  'img/design-cuando-eramos-felices-fondo.png',
+  'img/design-fr.png',
+  'img/design-modern-better.png',
+  'img/design-musica-clasica-fondo.png',
+  'img/design-nanen.png',
+  'img/design-pasado-oscuro.png',
 ];
-
-// const imagesToLoad = [
-//   'img/trucombo-cassette-abierto.png',
-//   'img/fotografia-cassettes-piano.png',
-//   'img/arp-improv-no1.png',
-//   'img/fede-piano-barcelona.png',
-//   'img/fede-kew-gardens-cortada.png',
-//   'img/7-10-22.png',
-//   'img/tru-combo.png',
-//   'img/fotografia-vol2.png',
-//   'img/fotografia-vol1.png',
-//   'img/hidden-toys.png',
-//   'img/design-cuando-eramos-felices-fondo.png',
-//   'img/design-fr.png',
-//   'img/design-modern-better.png',
-//   'img/design-musica-clasica-fondo.png',
-//   'img/design-nanen.png',
-//   'img/design-pasado-oscuro.png',
-// ];
 
 function preloadImage(imageUrl) {
   return new Promise((resolve, reject) => {
