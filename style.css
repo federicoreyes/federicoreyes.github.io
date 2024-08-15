@@ -90,25 +90,35 @@ a:hover,
 }
 
 /* Media query for collapsed navbar button color and style */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .navbar-toggler {
     background-color: transparent !important;
     outline: none !important;
+    border: none !important;
   }
 
   .navbar-toggler-icon {
     color: #000 !important;
     display: flex; /* Make it a flex container */
     align-items: center; /* Center vertically within the flex container */
+    background-color: transparent !important;
     outline: none !important;
+    border: none !important;
     margin-left: 4px;
     margin-bottom: 4px;
     font-size: 18px;
   }
+
+  #navbarNav {
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+  }
 }
 
 #image-grid figcaption,
-#video-grid figcaption {
+#video-grid figcaption,
+#design-grid figcaption {
   color: #000;
   font-size: 13px;
 }
