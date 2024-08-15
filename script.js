@@ -4,6 +4,28 @@ const getCurrDate = function () {
   return new Date().getFullYear();
 };
 
+const imagesToLoad = [
+  'img/fede-piano-barcelona.png',
+  'img/fede-kew-gardens-cortada.png',
+];
+
+function preloadImage(imageUrl) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = resolve;
+    img.onerror = reject;
+    img.src = imageUrl;
+  });
+}
+
+async function preloadImages() {
+  for (const imageUrl of imagesToLoad) {
+    await preloadImage(imageUrl);
+  }
+}
+
+preloadImages();
+
 /*
 const anchors = document.querySelectorAll('a[href^="#"]');
 
