@@ -1,9 +1,5 @@
 'use strict';
 
-const getCurrDate = function () {
-  return new Date().getFullYear();
-};
-
 const imagesToLoad = [
   'img/trucombo-cassette-abierto.png',
   'img/fotografia-cassettes-piano.png',
