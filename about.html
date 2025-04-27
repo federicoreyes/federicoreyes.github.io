@@ -39,7 +39,20 @@
       <div class="logo">
         <a href="index.html">federico reyes</a>
       </div>
-      <div class="social-media-container d-flex">
+
+      <!-- Hamburger only shows on mobile -->
+      <button
+        class="navbar-toggler custom-toggler ml-auto d-lg-none"
+        type="button"
+        aria-label="Toggle navigation"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Social media icons only show on desktop -->
+      <div class="social-media-container d-none d-lg-flex">
         <a href="mailto:federicoreyes94@gmail.com"
           ><i class="fa fa-envelope"></i
         ></a>
@@ -63,26 +76,14 @@
     </header>
 
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-3"
-    >
-      <button
-        class="navbar-toggler custom-toggler ml-auto"
-        type="button"
-        aria-label="Toggle navigation"
-      >
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
+    <nav class="navbar navbar-expand-lg justify-content-center">
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarNav"
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" id="active-link" href="about.html">about</a>
+            <a class="nav-link" href="about.html" id="active-link">about</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="music.html">music</a>
