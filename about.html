@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>frey_s</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png" />
-    <!-- Bootstrap and Font Awesome CSS -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap & FontAwesome -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,13 +16,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Tactile&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Preload Important Images -->
     <link rel="preload" as="image" href="img/fede-piano-barcelona.png" />
-    <link rel="preload" as="image" href="img/fede-kew-gardens-cortada.png" />
+    <link rel="preload" as="image" href="img/fede-kew-gardens.png" />
   </head>
+
   <body>
-    <!-- Top Header -->
-    <header>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3">
       <div class="logo">
         <a href="index.html">federico reyes</a>
       </div>
@@ -33,7 +47,7 @@
           ><i class="fab fa-instagram"></i
         ></a>
         <a
-          href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU?si=M8YB_C4KSrGRiVm7KuT37A"
+          href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU"
           target="_blank"
           ><i class="fab fa-spotify"></i
         ></a>
@@ -47,23 +61,28 @@
         ></a>
       </div>
     </header>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg d-flex">
+    <nav
+      class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-3"
+    >
       <button
-        class="navbar-toggler"
+        class="navbar-toggler custom-toggler ml-auto"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" id="active-link" href="about.html">about</a>
+            <a class="nav-link" href="about.html">about</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="music.html">music</a>
@@ -71,128 +90,115 @@
           <li class="nav-item">
             <a class="nav-link" href="video.html">video</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="design.html">design</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="docs/Resume_Federico_Reyes.pdf"
-              target="_blank"
-              >resume</a
-            >
-          </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <main>
-      <div class="container-fluid">
-        <div class="row p-2 px-lg-5 mx-lg-5 mx-md-2 mx-sm-0">
-          <div class="col-lg-6 d-flex flex-column">
-            <div id="bio">
-              <p>
-                Federico Reyes (frey_s) is a Venezuelan artist based in Spain.
-                With a foundation in piano, his creative pursuits have expanded
-                to encompass music production, composition, drawing, and graphic
-                design.
-              </p>
-              <p>
-                Reyes’s artistic journey has been enriched by formal education,
-                including a degree in
-                <a
-                  href="https://www.city.ac.uk/prospective-students/courses/undergraduate/music-sound-and-technology"
-                  target="_blank"
-                  >Music, Sound and Technology from City University of London</a
-                >, and an
-                <a
-                  href="https://cei.es/cei-curso/curso-intensivo-diseno-grafico/"
-                  target="_blank"
-                  >Adobe Creative Suite professional certification at CEI</a
-                >
-                in Madrid. With experience as a
-                <a
-                  href="https://www.sternbergclarke.co.uk/about"
-                  target="_blank"
-                  >luxury hotel pianist</a
-                >,
-                <a href="https://www.themusicklub.com/" target="_blank"
-                  >music teacher</a
-                >, and producer for various independent projects, Reyes has
-                cultivated a well-rounded artistic background. As a founding
-                member of the Barcelona-based record label
-                <a href="https://lacreurecords.com/" target="_blank"
-                  >Lacreu Records</a
-                >, he has contributed to the development of the local music
-                scene.
-              </p>
-              <p>
-                Reyes is currently open to working on new music, visual art, or
-                graphic design projects.
-              </p>
-            </div>
-            <div class="contact-info d-flex flex-wrap justify-content-start">
-              <span class="contact-item"
-                ><a href="mailto:federicoreyes94@gmail.com">Email</a>
-              </span>
-              <span class="contact-item"
-                ><a href="https://www.instagram.com/_frey_s_/" target="_blank"
-                  >Instagram</a
-                >
-              </span>
-              <span class="contact-item">
-                <a
-                  href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU?si=M8YB_C4KSrGRiVm7KuT37A"
-                  target="_blank"
-                  >Spotify</a
-                >
-              </span>
-              <span class="contact-item">
-                <a href="https://freysss.bandcamp.com/" target="_blank"
-                  >Bandcamp</a
-                >
-              </span>
-              <span class="contact-item">
-                <a
-                  href="https://www.youtube.com/channel/UCtoKbFukV0VzuYA02DNzF5A"
-                  target="_blank"
-                  >YouTube</a
-                >
-              </span>
-            </div>
-            <img
-              src="img/fede-piano-barcelona.png"
-              alt=""
-              class="img-fluid shadow-1-strong mb-4 w-100 mt-3"
-            />
+    <!-- Main Content -->
+    <main class="container my-4">
+      <div class="row justify-content-center px-lg-5">
+        <!-- Left Column: Bio + Buttons + Piano Image -->
+        <div class="col-lg-6 d-flex flex-column">
+          <div id="bio" class="mb-2">
+            <p>
+              Federico Reyes (frey_s) is a Venezuelan artist based in Barcelona,
+              Spain. With a foundation in piano, his creative pursuits have
+              expanded to encompass music production, composition, live
+              performance, and drawing.
+            </p>
+            <p>
+              He studied
+              <a
+                href="https://www.city.ac.uk/prospective-students/courses/undergraduate/music-sound-and-technology"
+                target="_blank"
+                >Music, Sound and Technology</a
+              >
+              at City University of London and more recently earned an Adobe
+              Creative Suite certification at
+              <a
+                href="https://cei.es/cei-curso/curso-intensivo-diseno-grafico/"
+                target="_blank"
+                >CEI</a
+              >
+              in Madrid. His experience includes work as a
+              <a href="https://www.sternbergclarke.co.uk/about" target="_blank"
+                >luxury hotel pianist</a
+              >,
+              <a href="https://www.themusicklub.com/" target="_blank"
+                >music teacher</a
+              >, and producer for independent projects.
+            </p>
+            <p>
+              Reyes is currently open to working on new sound, music, and visual
+              art projects.
+            </p>
           </div>
-          <div class="col-lg-6 d-flex flex-column">
-            <img
-              src="img/fede-kew-gardens-cortada.png"
-              alt=""
-              class="img-fluid shadow-1-strong mb-4 w-100"
-            />
+
+          <!-- Contact Buttons -->
+          <div class="contact-info d-flex flex-wrap mb-4">
+            <a
+              class="btn custom-btn m-1"
+              href="mailto:federicoreyes94@gmail.com"
+              >email</a
+            >
+            <a
+              class="btn custom-btn m-1"
+              href="https://www.instagram.com/_frey_s_/"
+              target="_blank"
+              >instagram</a
+            >
+            <a
+              class="btn custom-btn m-1"
+              href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU"
+              target="_blank"
+              >spotify</a
+            >
+            <a
+              class="btn custom-btn m-1"
+              href="https://freysss.bandcamp.com/"
+              target="_blank"
+              >bandcamp</a
+            >
+            <a
+              class="btn custom-btn m-1"
+              href="https://www.youtube.com/channel/UCtoKbFukV0VzuYA02DNzF5A"
+              target="_blank"
+              >youtube</a
+            >
           </div>
+
+          <!-- Small Piano Image -->
+          <img
+            src="img/fede-piano-barcelona.png"
+            alt="Federico Reyes Piano Barcelona"
+            class="img-fluid rounded shadow about-image"
+          />
+        </div>
+
+        <!-- Right Column: Big Kew Gardens Image -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img
+            src="img/fede-kew-gardens.png"
+            alt="Federico Reyes at Kew Gardens"
+            class="img-fluid rounded shadow about-side-image w-100"
+          />
         </div>
       </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center py-3">
       ©
       <script>
         document.write(new Date().getFullYear());
       </script>
       frey_s
     </footer>
-    <script src="script.js"></script>
 
-    <!-- Bootstrap JavaScript and dependencies -->
+    <!-- Scripts -->
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   </body>
 </html>
