@@ -68,7 +68,7 @@ header {
 
 @media (max-width: 991px) {
   header .social-media-container {
-    display: none;
+    display: none !important; /*Hide in mobile*/
   }
 }
 
@@ -182,6 +182,8 @@ header {
 .figure-caption {
   color: var(--main-color) !important;
   font-size: 0.8rem;
+  margin-top: 0.3rem;
+  text-align: center;
 }
 
 /* ABOUT PAGE STYLES */
