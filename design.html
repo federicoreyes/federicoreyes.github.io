@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>frey_s</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>frey_s | Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png" />
-    <!-- Bootstrap and Font Awesome CSS -->
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <!-- Bootstrap & FontAwesome -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,17 +17,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preload" as="image" href="img/design-cuando-eramos-felices-fondo.png" />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Tactile&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Preload Important Images -->
+    <link
+      rel="preload"
+      as="image"
+      href="img/design-cuando-eramos-felices-fondo.png"
+    />
     <link rel="preload" as="image" href="img/design-fr.png" />
     <link rel="preload" as="image" href="img/design-modern-better.png" />
     <link rel="preload" as="image" href="img/design-musica-clasica-fondo.png" />
     <link rel="preload" as="image" href="img/design-nanen.png" />
     <link rel="preload" as="image" href="img/design-pasado-oscuro.png" />
   </head>
+
   <body>
-    <!-- Top Header -->
-    <header>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3">
       <div class="logo">
         <a href="index.html">federico reyes</a>
       </div>
@@ -37,7 +56,7 @@
           ><i class="fab fa-instagram"></i
         ></a>
         <a
-          href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU?si=M8YB_C4KSrGRiVm7KuT37A"
+          href="https://open.spotify.com/artist/2RhlkxQdR60M2zirFpmuTU"
           target="_blank"
           ><i class="fab fa-spotify"></i
         ></a>
@@ -51,21 +70,26 @@
         ></a>
       </div>
     </header>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg d-flex">
+    <nav
+      class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-3"
+    >
       <button
-        class="navbar-toggler"
+        class="navbar-toggler custom-toggler ml-auto"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="about.html">about</a>
           </li>
@@ -90,96 +114,96 @@
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <main>
-      <div class="container-fluid">
-          <div class="row p-2 px-lg-5 mx-lg-5 mx-md-2 mx-sm-0" id="design-grid">
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-fr.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-pasado-oscuro.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-cuando-eramos-felices-fondo.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-modern-better.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-musica-clasica-fondo.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 mb-3 px-3">
-              <figure class="figure text-center">
-                    <img
-                      src="img/design-nanen.png"
-                      class="figure-img img-fluid w-100 shadow-1-strong"
-                      alt=""
-                    />
-                  <figcaption class="figure-caption">
-                </figcaption>
-              </figure>
-            </div>
-          </div>
+    <!-- Main Content -->
+    <main class="container-fluid my-4">
+      <div class="row p-2 px-lg-5 mx-lg-5 mx-md-2 mx-sm-0" id="design-grid">
+        <!-- Design Image 1 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-fr.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Design FR"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+
+        <!-- Design Image 2 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-pasado-oscuro.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Pasado Oscuro"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+
+        <!-- Design Image 3 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-cuando-eramos-felices-fondo.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Cuando Eramos Felices"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+
+        <!-- Design Image 4 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-modern-better.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Modern Better"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+
+        <!-- Design Image 5 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-musica-clasica-fondo.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Musica Clasica Fondo"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
+        </div>
+
+        <!-- Design Image 6 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4 px-3">
+          <figure class="figure text-center">
+            <img
+              src="img/design-nanen.png"
+              class="figure-img img-fluid w-100 shadow"
+              alt="Design Nanen"
+            />
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
         </div>
       </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center py-3">
       ©
       <script>
         document.write(new Date().getFullYear());
       </script>
       frey_s
     </footer>
-    <script src="script.js"></script>
 
-    <!-- Bootstrap JavaScript and dependencies -->
+    <!-- Scripts -->
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   </body>
 </html>
