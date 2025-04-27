@@ -5,6 +5,7 @@ const imagesToLoad = [
   'img/fotografia-cassettes-piano.png',
   'img/arp-improv-no1.png',
   'img/fede-piano-barcelona.png',
+  'img/fede-kew-gardens.png',
   'img/fede-kew-gardens-cortada.png',
   'img/7-10-22.png',
   'img/tru-combo.png',
@@ -35,3 +36,11 @@ async function preloadImages() {
 }
 
 preloadImages();
+
+const toggler = document.querySelector('.custom-toggler');
+const navbarNav = document.getElementById('navbarNav');
+
+toggler.addEventListener('click', () => {
+  toggler.classList.toggle('active');
+  navbarNav.classList.toggle('show');
+});
