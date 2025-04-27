@@ -66,6 +66,12 @@ header {
   transform: scale(1.1);
 }
 
+@media (max-width: 991px) {
+  header .social-media-container {
+    display: none;
+  }
+}
+
 /* NAVBAR */
 .navbar {
   padding: 0.5rem 1rem;
@@ -175,6 +181,7 @@ header {
 
 .figure-caption {
   color: var(--main-color) !important;
+  font-size: 0.8rem;
 }
 
 /* ABOUT PAGE STYLES */
